@@ -42,8 +42,6 @@ jobs:
           tags: |
             # For tag pushes: v1.2.3 -> 1.2.3, latest
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
             # For main branch pushes: latest + sha
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,prefix=,format=short
