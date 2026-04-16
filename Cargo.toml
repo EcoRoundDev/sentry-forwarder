@@ -1,0 +1,20 @@
+[package]
+name = "sentry-forwarder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Web 框架和异步运行时
+axum = "0.8.9"
+tokio = { version = "1.0", features = ["full", "rt-multi-thread"] }
+
+# 序列化/反序列化处理 JSON
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Sentry SDK
+sentry = "0.47.0"
+dotenvy = "0.15.7"
+
+# gzip 解压 (ProxyPin 可能以 gzip 压缩上报)
+flate2 = "1.1"
