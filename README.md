@@ -31,5 +31,5 @@
 克隆仓库并进入项目目录：
 
 ```bash
-git clone [https://github.com/你的用户名/sentry-forwarder.git](https://github.com/你的用户名/sentry-forwarder.git)
+git clone https://github.com/ecorounddev/sentry-forwarder.git
 cd sentry-forwarder
